@@ -3,22 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<Meta name=" robots" content="index, follow" />
-	<Meta http-equiv="Pragma" CONTENT="no-cache">
-	<title>Nina Carducci, photogrape</title>
-	<meta name="description" content="Photographe mariage, evenements, soirée, concerts etc sur Bordeaux. Des photos naturelles et élégantes dans toute la Gironde (33).">
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Nina Carducci, photogrape sur Bordeaux</title>
+	<meta name="description" content="Photographe mariage, evenements, soirée, concerts etc sur Bordeaux. Des photos naturelles et élégantes dans toute la Gironde (33). Reseaux sociaux : Facebook, Twitter, instagram">
+	<!-- Twitter Card data -->
+	<meta name="twitter:title" content="Nina Carducci, Photographe" />
+	<meta name="twitter:description" content="Photographe mariage, evenements, soirée, concerts etc sur Bordeaux. Des photos naturelles et élégantes dans toute la Gironde (33). Reseaux sociaux : Facebook, Twitter, instagram" />
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Nina Carducci, photographe"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://nina-carducci.github.io/"/>
+	<meta property="og:description" content="Photographe mariage, evenements, soirée, concerts etc sur Bordeaux. Des photos naturelles et élégantes dans toute la Gironde (33). Reseaux sociaux : Facebook, Twitter, instagram"/>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/assets/images/instagram.png"/>
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-<div class="top-header">
-	<h1 class="name">Nina Carducci</h1>
-	<div class="nav">
+<header class="top-header">
+	<h1 class="name">Nina Carducci, photographe en Gironde</h1>
+	<nav class="nav">
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -26,9 +35,10 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo d'instagram"></a></li>
 		</ul>
-	</div>
-</div>
-<div id="header">
+	</nav>
+</header>
+<main>
+<section id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -56,8 +66,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
-<div id="about">
+</section>
+<article id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" alt="Photo of nina standing in front of the lens, in front of the edge of a bamboo forest">
 	</div>
@@ -67,8 +77,8 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
-<div id="gallery">
+</article>
+<section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
@@ -91,8 +101,8 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<article id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
@@ -127,16 +137,17 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="quote">
+</article>
+<article class="quote">
 	<figure>
 		<blockquote>
 			<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</div>
-<div id="contact">
+</article>
+</main>
+<footer id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
@@ -153,9 +164,15 @@
 		</div>
 		<div class="picture right">
 			<img src="./assets/images/camera.webp" alt="Old vintage camera">
+				<div itemscope itemtype="https://schema.org/Person">
+					<br>
+					<div itemprop="adress">Avenue Alsace-Lorraine, 33200 Bordeaux.</div>
+					<div itemprop="telephone">05 56 67 78 89.</div>
+					<div>Horaires de contact : de 10 h à 19 h</div>
+				</div>
 		</div>
 	</div>
-</div>
+</footer>
 <script src="./assets/maugallery.js"></script>
 <script src="./assets/scripts.js"></script>
 </body>
